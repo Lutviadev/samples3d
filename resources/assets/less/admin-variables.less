@@ -1,0 +1,51 @@
+@body-bg: #D7DADD;
+
+@brand-color: #000;
+
+@primary-color: #FFF;
+@primary-bg: #00acac;
+@primary-bg-dark: #008a8a;
+
+@head-font: 'Open Sans','Arial';
+@head-bg: #FFF;
+@head-heigth: 54px;
+@head-iso-color: #5FCFCF;
+@head-toggle-bg: #F4F4F4;
+@head-toggle-border: #E7E7E7;
+@head-iconbar-color: @head-iso-color;
+@head-user-nombre-color: burlywood;
+@head-user-btn-color: cadetblue;
+
+@left-side-bg: #2D353C;
+@left-side-width: 220px;
+
+@sidebar-font: 'Open Sans', 'Arial', sans-serif;
+@sidebar-index-color: @primary-bg;
+
+@contetn-font: 'Open Sans', 'Arial', sans-serif;
+
+@viewport-bg: #333;
+
+.opacity(@opacidad){
+	-webkit-opacity: @opacidad;
+	-moz-opacity: @opacidad;
+	opacity: @opacidad;
+}
+
+.sombra(){
+	-webkit-box-shadow: 0 0 2px rgba(0,0,0,.3);
+	-moz-box-shadow:    0 0 2px rgba(0,0,0,.3);
+	box-shadow:         0 0 2px rgba(0,0,0,.3);
+}
+
+.quitarSombra(){
+	-webkit-box-shadow: 0 0 0px rgba(0,0,0,0);
+	-moz-box-shadow:    0 0 0px rgba(0,0,0,0);
+	box-shadow:         0 0 0px rgba(0,0,0,0);	
+}
+
+.radio(@radio){
+	-webkit-border-radius: @radio;
+	-moz-border-radius: @radio;
+	border-radius: @radio;
+}

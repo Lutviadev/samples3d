@@ -1,0 +1,52 @@
+/* Reset */
+a, button, input
+{
+    &:hover, &:focus, &:active{
+        outline: none;
+    }
+}
+
+/* Funciones */
+
+.radiusAll(@radius)
+{
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.shadowLight()
+{
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    1px 1px 5px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         1px 1px 5px 0px rgba(50, 50, 50, 0.5);
+}
+
+/* Login */
+
+.loginbox
+{
+    font-family: 'Lato', sans-serif;
+    margin-top:25%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    .radiusAll(5px);
+    .shadowLight();
+
+    h2{
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #00ACAC;
+        font-weight: 700;
+        margin-top: 0px;
+    }
+
+    p{
+        font-weight: 300;        
+    }
+
+    .checkbox label{
+        font-weight: 300;
+    }
+
+}

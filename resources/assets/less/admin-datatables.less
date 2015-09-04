@@ -1,0 +1,120 @@
+.dataTables_wrapper
+{
+	font-size: 12px;	
+
+	label
+	{
+		font-weight: normal;
+	}	
+
+	table
+	{
+		
+		width: 100%;
+		padding-top: 25px;		
+
+		>thead>tr>th 
+		{
+  			border:1px solid #e2e7eb;
+  			padding: 10px 15px;
+  			font-weight: bold;
+  			color: #242a30;
+		}
+
+		&.dataTable.no-footer 
+		{
+    		border-bottom: 1px solid #e2e7eb;
+		}	
+
+	}
+
+	.dataTables_filter input, .dataTables_length select 
+	{
+		border: 1px solid #ccd0d4;
+		background: #fff;
+		font-size: 12px;
+		padding: 6px 12px;
+		line-height: 1.42857143;
+		color: #555;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+	}
+
+	.dataTables_info
+	{
+		color: #707478;
+	}
+
+	.dataTables_paginate 
+	{
+		.paginate_button{
+			
+			color: #242a30;
+			margin-left: 5px;
+			-webkit-border-radius: 3px!important;
+			-moz-border-radius: 3px!important;
+			border-radius: 3px!important;
+			border: 1px solid #e2e7eb;
+			padding: 6px 12px;
+			display: inline;
+			text-decoration: none;
+			cursor: pointer;
+
+			&.current, &:hover, &:focus
+			{
+	 			background: #242a30 !important;
+	  			border-color: #242a30 !important;
+	  			color: #fff !important;
+	  		}
+
+			&.disabled, &.disabled:hover, &.disabled:focus
+			{
+				color: #777 !important;
+				cursor: not-allowed;
+				background-color: #fff !important;
+				border-color: #ddd !important;
+				opacity: 0.6;
+			}
+
+		}
+	}
+
+	.dt_actions
+	{
+		min-width: 90px !important;
+		text-align: center;
+	}
+
+	.dataTables_processing 
+	{
+		display: block;
+		position: absolute;
+		width: 150px;
+		text-align: center;
+		font-size: 15px;
+		background: rgba(51, 51, 51, 0.85) none repeat scroll 0% 0%;
+		left: 50%;
+		margin-left: -120px;
+		margin-top: 0px;
+		height: auto;
+		color: #C8C9C9;
+		padding: 6px;
+		top: -1px;
+		border-radius: 5px;
+		z-index: 10;
+	}
+
+	.case
+	{
+		background: #74B4B4;
+		padding: 2px 5px;
+		color: #FFF;
+		margin-right: 2px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		font-size: 11px;
+	}
+
+}

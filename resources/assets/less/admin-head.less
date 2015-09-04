@@ -1,0 +1,155 @@
+#head
+{
+	
+	font-family: @head-font; 
+	background: @head-bg;
+
+	.navbar{
+		position: initial;
+		min-height: initial;
+		margin-bottom: 0px;
+		border: none;
+
+		.navbar-header{
+
+			float: left;
+			
+			.navbar-brand{
+				height: @head-heigth;
+				width: @left-side-width;
+				margin-right: 10px;
+				padding: 12px 14px;
+				font-weight: 100;
+				font-size: 18px;
+				line-height: 30px;
+				color: @brand-color;
+
+				i{
+					margin-right: 5px;
+					color: @head-iso-color;
+				}
+			}
+		}		
+
+		.navbar-toggle {
+			background: @head-toggle-bg;
+			border-color: @head-toggle-border;
+			margin-right: 20px;
+			margin-top: 13px;
+
+			.icon-bar{
+				border: 1px solid @head-iconbar-color;
+			}
+		}
+
+		.navbar-user{
+			position: absolute;
+			min-width: auto;
+			right: 0px;
+			margin: 0px;
+			
+			@media (max-width: @screen-sm-max) {
+				min-width: 260px;
+			}
+			
+			@media (max-width: @screen-xs-max) {				
+				min-width: 100%;
+			}
+
+			>li>a {
+				padding: 17px 5px 5px;	
+				background: @head-bg;
+				float: right !important;				
+
+				@media (min-width: @grid-float-breakpoint) {   
+					float: left !important;
+				}
+				
+			}
+
+			>li>a:hover {
+				background: @head-bg;
+				-webkit-opacity: .7;
+				-moz-opacity: .7;
+				opacity: .7;
+			}
+
+			.open>a:focus, .open>a:hover {
+				background: @head-bg;
+				border-color: @head-bg;
+			}
+
+			i{
+				margin-right: 20px;
+				color: @head-iso-color;
+
+				@media (min-width: @grid-float-breakpoint) { 
+					margin-right: 5px;
+				}
+			}
+
+			.navbar-locker{
+				position: absolute;
+				right: 200px;
+				top: 20px;
+				
+				@media (max-width: @screen-sm-max) {
+					right: 260px;
+				}
+
+				@media (max-width: @screen-xs-max) {
+					right: 90px;
+				}
+			}
+			
+			.avatar{
+				float: left;
+ 				margin-top: -10px;
+  				margin-right: 5px;
+				width: 40px;
+				height: 40px;
+				overflow: hidden;
+				-webkit-border-radius: 220px;
+				-moz-border-radius: 20px;
+				border-radius: 20px;
+				border-top: 1px solid @head-iso-color;
+				border-left: 1px solid @head-iso-color;				
+			}
+
+			.dropdown{
+				@media (min-width: @screen-sm-min) {
+					float: left;
+					margin-right: 10px;
+				}				
+			}
+
+			.dropdown-toggle{
+				color: @head-user-nombre-color;
+				margin-right: 4px;
+
+				@media (min-width: @grid-float-breakpoint) { 
+					margin-right: 0px;
+				}
+			}
+			
+			.dropdown-menu{	
+				margin-top: 2px;
+
+				>li>a {
+					color: @head-user-btn-color;				
+				}
+
+				@media (max-width: @screen-xs-max) {
+					margin-top: 0px;
+					width: 100%;
+					float: left;
+					position: initial;
+					border: none;
+					box-shadow: none;
+					padding: 7px 0px;
+				}
+			}
+		}
+	}
+
+}
